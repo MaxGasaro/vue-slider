@@ -46,6 +46,9 @@ const app = new Vue(
                 } else if(this.indiceAttivo == this.items.length - 1) {
                     this.indiceAttivo = 0;
                 }
+            },
+            apriQuesta: function(indice) {
+                this.indiceAttivo = indice;
             }
         }
     }

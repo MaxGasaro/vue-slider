@@ -25,7 +25,7 @@
             <div class="prev" @click="up"></div>
             <div class="next" @click="down"></div>
              
-            <div class="thumb" v-bind:class="indice == indiceAttivo?'active':'' " v-for="(img, indice) in items">
+            <div class="thumb" @click="apriQuesta(indice)" v-bind:class="indice == indiceAttivo?'active':'' " v-for="(img, indice) in items">
                 <img v-bind:src="img.url" alt="">
             </div> 
             
